@@ -1,0 +1,8 @@
+<div *ngIf="articles; else noArticles">
+  <p>Articles found:</p>
+  {{ articles }}
+</div>
+<ng-template #noArticles>
+  <p>No articles found</p>
+</ng-template>
+<a routerLink="">Go back home</a>
